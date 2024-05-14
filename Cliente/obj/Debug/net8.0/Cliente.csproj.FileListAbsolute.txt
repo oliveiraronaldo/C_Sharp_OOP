@@ -1,0 +1,14 @@
+D:\C#_OOP\Cliente\bin\Debug\net8.0\Cliente.exe
+D:\C#_OOP\Cliente\bin\Debug\net8.0\Cliente.deps.json
+D:\C#_OOP\Cliente\bin\Debug\net8.0\Cliente.runtimeconfig.json
+D:\C#_OOP\Cliente\bin\Debug\net8.0\Cliente.dll
+D:\C#_OOP\Cliente\bin\Debug\net8.0\Cliente.pdb
+D:\C#_OOP\Cliente\obj\Debug\net8.0\Cliente.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#_OOP\Cliente\obj\Debug\net8.0\Cliente.AssemblyInfoInputs.cache
+D:\C#_OOP\Cliente\obj\Debug\net8.0\Cliente.AssemblyInfo.cs
+D:\C#_OOP\Cliente\obj\Debug\net8.0\Cliente.csproj.CoreCompileInputs.cache
+D:\C#_OOP\Cliente\obj\Debug\net8.0\Cliente.dll
+D:\C#_OOP\Cliente\obj\Debug\net8.0\refint\Cliente.dll
+D:\C#_OOP\Cliente\obj\Debug\net8.0\Cliente.pdb
+D:\C#_OOP\Cliente\obj\Debug\net8.0\Cliente.genruntimeconfig.cache
+D:\C#_OOP\Cliente\obj\Debug\net8.0\ref\Cliente.dll
