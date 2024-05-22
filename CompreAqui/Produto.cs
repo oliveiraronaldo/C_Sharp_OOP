@@ -4,18 +4,34 @@ namespace CompreAqui
     {
         public string Nome { get; private set; }
         public double Preco { get; private set; }
-        public int Quantidade { get; private set; }
+        public int Estoque { get; private set; }
+        public int Id { get; }
+        private static int proximoId = 1;
 
         public Produto(string nome, double preco, int quantidade)
         {
             Nome = nome;
             Preco = preco;
-            Quantidade = quantidade;
+            Estoque = quantidade;
+            Id = proximoId;
+            proximoId++;
+        }
+
+        public bool VenderProduto(int quantidade)
+        {
+            Estoque -= quantidade;
+            return true;
+        }
+
+        public bool CancelarVenda(int quantidade)
+        {
+            Estoque += quantidade;
+            return true;
         }
 
         public override string ToString()
         {
-            return $"[Nome: {Nome}, Preço: {Preco}, Quantidade: {Quantidade}]";
+            return $"{Id}- Nome: {Nome}, Preço: {Preco:c}, Quantidade: {Estoque}";
         }
     }
 }

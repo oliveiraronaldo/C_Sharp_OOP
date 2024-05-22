@@ -1,0 +1,15 @@
+D:\C#_OOP\CompreAqui\bin\Debug\net8.0\CompreAqui.exe
+D:\C#_OOP\CompreAqui\bin\Debug\net8.0\CompreAqui.deps.json
+D:\C#_OOP\CompreAqui\bin\Debug\net8.0\CompreAqui.runtimeconfig.json
+D:\C#_OOP\CompreAqui\bin\Debug\net8.0\CompreAqui.dll
+D:\C#_OOP\CompreAqui\bin\Debug\net8.0\CompreAqui.pdb
+D:\C#_OOP\CompreAqui\obj\Debug\net8.0\CompreAqui.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#_OOP\CompreAqui\obj\Debug\net8.0\CompreAqui.AssemblyInfoInputs.cache
+D:\C#_OOP\CompreAqui\obj\Debug\net8.0\CompreAqui.AssemblyInfo.cs
+D:\C#_OOP\CompreAqui\obj\Debug\net8.0\CompreAqui.csproj.CoreCompileInputs.cache
+D:\C#_OOP\CompreAqui\obj\Debug\net8.0\CompreAqui.sourcelink.json
+D:\C#_OOP\CompreAqui\obj\Debug\net8.0\CompreAqui.dll
+D:\C#_OOP\CompreAqui\obj\Debug\net8.0\refint\CompreAqui.dll
+D:\C#_OOP\CompreAqui\obj\Debug\net8.0\CompreAqui.pdb
+D:\C#_OOP\CompreAqui\obj\Debug\net8.0\CompreAqui.genruntimeconfig.cache
+D:\C#_OOP\CompreAqui\obj\Debug\net8.0\ref\CompreAqui.dll

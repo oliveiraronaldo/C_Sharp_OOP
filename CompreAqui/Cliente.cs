@@ -1,4 +1,6 @@
 
+using System.Text;
+
 namespace CompreAqui
 {
     class Cliente
@@ -7,6 +9,7 @@ namespace CompreAqui
         public string Email { get; private set; }
         public string Cpf { get; private set; }
         public string Endereco { get; private set; }
+        public Carrinho Carrinho { get; }
 
         public Cliente(string nome, string email, string cpf, string endereco)
         {
@@ -14,13 +17,26 @@ namespace CompreAqui
             Email = email;
             Cpf = cpf;
             Endereco = endereco;
+            Carrinho = new Carrinho(this);
         }
 
 
+        public bool AdicionarProduto(Produto produto, int quantidade)
+        {
+            var produtoAdicionado = Carrinho.AdicionarProduto(produto, quantidade);
+            return produtoAdicionado;
+        }
+
+        public bool ExcluirProduto(int id)
+        {
+            var produtoExcluido = Carrinho.RemoverProduto(id);
+            return produtoExcluido;
+        }
 
         public override string ToString()
         {
-            return $"[Nome: {Nome}, Email: {Email}, Cpf: {Cpf}, Endereço: {Endereco}]";
+            Console.Clear();
+            return $"Nome: {Nome} \nEmail: {Email} \nCpf: {Cpf} \nEndereço: {Endereco}";
         }
     }
 }

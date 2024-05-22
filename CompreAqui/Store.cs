@@ -6,47 +6,45 @@ namespace CompreAqui
     {
         private Dictionary<string, Cliente> clientes = new Dictionary<string, Cliente>();
         private Dictionary<string, Produto> produtos = new Dictionary<string, Produto>();
+
         public void CadastrarCliente(string nome, string email, string cpf, string endereco)
         {
             clientes.Add(cpf, new Cliente(nome, email, cpf, endereco));
         }
 
-        public void CadastrarProduto(string nome, double preco, int quantidade)
+        public bool CadastrarProduto(string nome, double preco, int quantidade)
         {
             produtos.Add(nome, new Produto(nome, preco, quantidade));
+            return true;
         }
 
-        public string BuscarCliente(string value)
+        public Cliente? BuscarCliente(string value)
         {
-            if (clientes.ContainsKey(value)) return clientes[value].ToString();
+            if (clientes.ContainsKey(value)) return clientes[value];
             else
             {
-                foreach (var key in clientes.Keys)
+                foreach (var cliente in clientes.Values)
                 {
-                    if (clientes[key].Nome.Contains(value, StringComparison.OrdinalIgnoreCase))
+                    if (cliente.Nome.Contains(value, StringComparison.OrdinalIgnoreCase))
                     {
-                        return clientes[key].ToString();
+                        return cliente;
                     }
                 }
             }
-            return "Cliente não Encontrado";
+            return null;
         }
 
-        public string BuscarProduto(string value)
+        public Produto? BuscarProduto(int id)
         {
-            if (produtos.ContainsKey(value)) return produtos[value].ToString();
-            else
+
+            foreach (var produto in produtos.Values)
             {
-                foreach (var key in produtos.Keys)
+                if (produto.Id == id)
                 {
-                    if (produtos[key].Nome.Contains(value, StringComparison.OrdinalIgnoreCase))
-                    {
-                        return produtos[key].ToString();
-                    }
+                    return produto;
                 }
             }
-
-            return "Produto não encontrado";
+            return null;
         }
 
 
